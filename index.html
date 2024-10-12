@@ -5,110 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refugio </title>
+    <link rel="stylesheet" href="css/styloindex.css">
     <style>
-        * {
-            margin-top: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            font-family: cursive;
-        }
-
-        header {
-            display: block;
-            background-color: rgb(1, 97, 123);
-            position: sticky;
-            top: 0px;
-        }
-
-        img.logo {
-            height: 55px;
-            width: 55px;
-            display: flex;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            justify-content: space-between;
-        }
-
-        li.li {
-            padding: 0px 15px;
-        }
-
-        header a {
-            text-decoration: none;
-            color: blanchedalmond;
-        }
-
-        .menu1 {
-            display: flex;
-            justify-content: left;
-            padding: 0px;
-        }
-
-        .menu2 {
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            font-size: 23px;
-        }
-
-        h1 {
-            font-size: 120px;
-            text-align: center;
-            
-        }
-        h3 {
-            font-size: 75px;
-            text-align: center;
-            margin: 25px 0px;
-            
-        }
-
+        
         body {
             background-image: url(images/FondoPatitas.png);
-            background-repeat: repeat;
-            background-size: auto;
-            background-attachment: inherit;
-            background-size: 200px 430px;
         }
-        .veterinaria{
-            display:inline-block;
-            align-items: initial;
+
+        footer {
+            background-color: rgb(6, 44, 0);
+            display: block;
+            padding: 10px 0px;
         }
-        .veterinaria img{
-            float: right;
-            height: 450px;
-            width: 675px;
-            margin: 25px;
-            border-radius: 100px;
-            border: 12px solid rgb(1, 97, 123);
-            
+
+        .GyP {
+            height: 193.9px;
+            width: auto;
         }
-        .veterinaria p{
-            margin: 10px 30px;
-            font-size: 26px;
+
+        .container {
+            padding: 5px 100px;
+            display: flex;
+        }
+
+        .container div {
+            margin: 0px 25px;
+        }
+
+        .contac {
+            display: flexbox;
+            background-color: aquamarine;
+            padding: 15px 100px;
+            color: white;
+        }
+
+        .contac p {
             text-align: center;
         }
-        .adopcion{
-            display:inline-block;
-            align-items: initial;
+        .redes{
+            display: flexbox;
+            background-color: aquamarine;
+            padding: 15px 50px;
         }
-        .adopcion img{
-            float: left;
-            height: 450px;
-            width: 675px;
-            margin: 25px;
-            border-radius: 250px;
-            border: 12px solid rgb(1, 97, 123);
-            
-        }
-        .adopcion p{
-            margin: 10px 30px;
-            font-size: 26px;
-            text-align: center;
+        .redes img {
+            height: 65px;
+            width: 65px;
         }
     </style>
 </head>
@@ -121,21 +62,23 @@
                     <li><img src="images/LogoPerroGato.png" alt="Company Logo" class="logo" /></li>
                 </div>
                 <div class="menu2">
-                    <li class="li"><a href="">Inicio</a></li>
-                    <li class="li"><a href="">Adopta</a></li>
-                    <li class="li"><a href="">Veterinaria</a></li>
-                    <li class="li"><a href="">Contáctanos</a></li>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Adopta</a></li>
+                    <li><a href="">Veterinaria</a></li>
+                    <li><a href="">Contáctanos</a></li>
                 </div>
             </ul>
         </nav>
     </header>
     <main>
         <h1>REFUGIO ARKHAM</h1>
-        <h3>¿Quiénes somos?</h3>
-        <p >Somos un refugio destinado a preservar la vida de los perros y gatos en situación de calle dándoles tránsito
-            y
-            brindándoles asistencia y/o cuidados veterinarios. También nos encargamos de encontrarles un
-            hogar a las mascotas que ya se encuentran en condiciones aptas para su adopción. </p>
+        <div class="quienesomo">
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos un refugio destinado a preservar la vida de los perros y gatos en situación de calle dándoles
+                tránsito y
+                brindándoles asistencia y/o cuidados veterinarios. También nos encargamos de encontrarles un
+                hogar a las mascotas que ya se encuentran en condiciones aptas para su adopción. </p>
+        </div>
         <div class="veterinaria">
             <img src="images/veterinaria.png" alt="">
             <h3>VETERINARIA</h3>
@@ -143,20 +86,38 @@
                 mascotas que ingresan al refugio,
                 como asi también prestamos servicio veterinario a mascotas ajenas a la institución y todo lo recaudado
                 es destinado a la compra de
-                alimentos, medicamentos e insumos que necesitamos.
-            <br>
-            Si desea saber más de nuestros servicios veterinarios  
-            <br><a href="">Más información...</a></p>
-
-            
+                alimentos, medicamentos e insumos que necesitamos.<br>
+                Si desea saber más de nuestros servicios veterinarios
+                <br><a href="">Más información...</a>
+            </p>
         </div>
         <div class="adopcion">
-            <img src="images/adopción.png" alt="">
+            <img src="images/adopción.jpg" alt="">
             <h3>ADOPCIÓN</h3>
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio sequi, necessitatibus incidunt hic
+                aliquam, assumenda eveniet magnam eius quod voluptas ducimus aperiam voluptatum rem atque exercitationem
+                nostrum in aliquid.
+            </p>
         </div>
-
     </main>
+    <footer>
+        <img src="images/GyPpie.jpg" alt="" class="GyP">
+        <div class="container">
+            <div class="contac">
+                <p>Telefono</p>
+                <p>(2669)15-287567</p>
+            </div>
+            <div class="contac">
+                <p>Direccion</p>
+                <p>Avenida Siempreviva 742</p>
+            </div>
+            <div class="redes">
+                <img src="images/Facebook.png" alt="">
+                <img src="images/intagram.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
