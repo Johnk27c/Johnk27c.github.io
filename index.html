@@ -14,42 +14,65 @@
 
         footer {
             background-color: rgb(6, 44, 0);
-            display: block;
-            padding: 10px 0px;
-        }
-
-        .GyP {
-            height: 193.9px;
-            width: auto;
+            padding: 10px 0;
         }
 
         .container {
-            padding: 5px 100px;
-            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .container div {
-            margin: 0px 25px;
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .contac {
-            display: flexbox;
-            background-color: aquamarine;
-            padding: 15px 100px;
-            color: white;
+            width: 30%;
+            padding: 0px 15px;
         }
 
-        .contac p {
+        h5 {
+            font-size: 25px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            
+            color: white;
+            padding-bottom: 10px;
+            text-align: center;
+
+        }
+
+        .contac p{
+            font-size: 18px;
+            color: grey;
+            display: block;
+            margin-bottom: 10px;
+            transition: all .3s ease;
             text-align: center;
         }
-        .redes{
-            display: flexbox;
-            background-color: aquamarine;
-            padding: 15px 50px;
+        .contac p:hover{
+            color:white;
+
         }
-        .redes img {
+        
+        .contac img {
+            display: inline-block;
+            line-height: 40px;
             height: 65px;
             width: 65px;
+            transition: all .2s ease;  
+        }
+        .img1{
+            margin: 0px 10px 0px 100px;
+
+        }
+        .img2{
+            margin: 0px 70px 0px 10px;
+        }
+        .contac img:hover {
+           background-color:  grey;
+           border-radius: 50px;
         }
     </style>
 </head>
@@ -102,19 +125,21 @@
         </div>
     </main>
     <footer>
-        <img src="images/GyPpie.jpg" alt="" class="GyP">
         <div class="container">
-            <div class="contac">
-                <p>Telefono</p>
-                <p>(2669)15-287567</p>
-            </div>
-            <div class="contac">
-                <p>Direccion</p>
-                <p>Avenida Siempreviva 742</p>
-            </div>
-            <div class="redes">
-                <img src="images/Facebook.png" alt="">
-                <img src="images/intagram.png" alt="">
+            <div class="footer-row">
+                <div class="contac">
+                    <h5>Teléfono</h5>
+                    <p>(2669)15-287567</p>
+                </div>
+                <div class="contac">
+                    <h5>Dirección</h5>
+                    <p>Avenida Siempreviva 742</p>
+                </div>
+                <div class="contac">
+                    <h5>Redes</h5>
+                    <img src="images/Facebook.png" alt="" class="img1">
+                    <img src="images/intagram.png" alt="" class="img2">
+                </div>
             </div>
         </div>
     </footer>
