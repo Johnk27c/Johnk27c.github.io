@@ -1,0 +1,108 @@
+* {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: cursive;
+}
+
+body {
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: inherit;
+    background-size: 200px 430px;
+}
+
+header {
+    display: flexbox;
+    background-color: rgb(1, 97, 123);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu1 {
+    justify-content: left;
+    padding: 0px;
+}
+
+.menu1 img {
+    height: 55px;
+    width: 55px;
+    display: flex;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 23px;
+}
+
+.menu2 li {
+    padding: 0px 15px;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+.c{
+    text-align: center;    
+    font-size: 25px;
+    color: rgb(20, 0, 148);
+}
+.cuadro{
+    background-color: rgb(16, 215, 66);
+    height: 250px;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
+    padding: 10px 50px;
+    border-radius: 100px; 
+}
+.derecha { 
+    margin-top: 40px;
+    margin-right: 2%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.centro {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.izquierda {
+    margin-top: 40px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: initial;
+    
+}
