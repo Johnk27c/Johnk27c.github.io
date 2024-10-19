@@ -52,40 +52,52 @@ nav ul {
     text-decoration: none;
     color: white;
 }
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: black;
+}
 
 h3 {
     font-size: 40px;
     text-align: center;
     color: black;
 }
-
 h2 {
+    font-size: 30px;
+    padding: 5px 150px;
+    text-align: center;
+    color: black;
+}
+
+.texto {
+    text-align: center;
+    font-size: 130%;
+    color: rgb(0, 0, 0);
+}
+.texto h3{
+        font-size: 40px;
+        text-align: center;
+        color: black;
+}
+.texto h4 {
     font-size: 25px;
     text-align: center;
     color: black;
 }
 
-p {
-    font-size: 20px;
-    text-align: center;
-    color: black;
-}
-
-
-.c{
-    text-align: center;    
-    font-size: 25px;
-    color: rgb(20, 0, 148);
-}
-.cuadro{
+/* CUADROS TRATAMIENTOS */
+.cuadro {
     background-color: rgb(16, 215, 66);
-    height: 250px;
-    width: 600px;
+    height: 125%;
+    width: 40%;
     box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
     padding: 10px 50px;
-    border-radius: 100px; 
+    border-radius: 100px;
+    flex-wrap: wrap;
 }
-.derecha { 
+/* ALINEACION CUADROS TRATAMIENTOS */
+.derecha {
     margin-top: 40px;
     margin-right: 2%;
     display: flex;
@@ -96,7 +108,6 @@ p {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    
 }
 
 .izquierda {
@@ -104,5 +115,45 @@ p {
     margin-left: 2%;
     display: flex;
     justify-content: initial;
-    
+
+}
+/* FORMS CUADRO*/
+fieldset{
+    border-radius: 20px;
+}
+/* FORMS INPUTS*/
+.inputs {
+    margin: 15px 0px;
+}
+
+.input {
+    background-color: blanchedalmond;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+textarea {
+    background-color: blanchedalmond;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    resize: none;
+}
+/* FORMS BOTON*/
+.submit {
+    background-color: rgb(255, 122, 60);
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 25px;
+    border-width: 2px 2px 2px 2px;
+}
+/* FORMS ERRORES SPAN*/
+span {
+    display: none;
+    color: red;
 }

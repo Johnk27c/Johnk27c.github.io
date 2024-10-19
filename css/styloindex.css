@@ -5,55 +5,66 @@
     margin-bottom: 0px;
     font-family: cursive;
 }
+
 body {
     background-repeat: repeat;
     background-size: auto;
     background-attachment: inherit;
     background-size: 200px 430px;
 }
+
 header {
     display: flexbox;
     background-color: rgb(1, 97, 123);
     position: sticky;
     top: 0px;
 }
+
 nav ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
+
 .menu1 {
     justify-content: left;
     padding: 0px;
 }
-.menu1 img{
+
+.menu1 img {
     height: 55px;
     width: 55px;
     display: flex;
 }
+
 .menu2 {
     display: flex;
     justify-content: right;
     align-items: center;
     font-size: 23px;
 }
+
 .menu2 li {
     padding: 0px 15px;
 }
+
 .menu2 a {
     text-decoration: none;
     color: white;
 }
+
 h1 {
     font-size: 140px;
     text-align: center;
 }
-h3 {
+
+/* h3 {
     font-size: 80px;
     text-align: center;
     color: black;
-}
-.quienesomo{
+} */
+
+.quienesomo {
     background-color: rgb(16, 163, 204);
     display: flexbox;
     align-items: initial;
@@ -66,50 +77,79 @@ h3 {
     font-weight: bold;
     box-shadow: black 0px 0px 25px 15px;
 }
-.veterinaria{
+
+.centro {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CUADRO VETERINARIA */
+.cuadroa {
     background-color: rgb(250, 166, 39);
-    display: inline-block;
-    align-items: initial;
-    margin: 75px 10px;
-    border-radius: 115px;
-    box-shadow: black 0px 0px 25px 15px;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
+    border-radius: 150px;
+    flex-wrap: wrap;
 }
-.veterinaria h3{
-    padding: 25px;
-}
-.veterinaria img{
+
+/* IMAGEN VETERINARIA */
+.veterinaria {
     float: right;
-    height: 450px;
-    width: 675px;
-    margin: 15px 15px;
-    padding: 0px 0px 0px 25px;
-    border-radius: 100px; 
+    border-radius: 150px;
+    padding: 35px 25px 35px 30px;
+    width: 45%;
 }
-.veterinaria p{
-    margin: 10px 30px;
-    font-size: 23px;
+
+/* TEXTO VETERINARIA */
+.textoa h3 {
     text-align: center;
+    font-size: 500%;
+    padding: 35px 75px 0px 25px;
 }
-.adopcion{
+
+.textoa p {
+    margin: 10px 30px;
+    font-size: 150%;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+}
+
+/* CUADRO ADOPCION */
+.cuadrob {
     background-color: goldenrod;
-    display: inline-block;
-    align-items: initial;
-    margin: 75px 10px;
-    border-radius: 195px;
-    box-shadow: black 0px 0px 25px 15px;
+    height: 125%;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
+    padding: 10px 50px 10px 30px;
+    border-radius: 200px;
+    flex-wrap: wrap;
 }
-.adopcion h3{
-    padding: 25px 85px 25px 25px;
-}
-.adopcion img{
+
+/* IMAGEN ADOPCION */
+.adopcion {
     float: left;
-    margin: 15px 15px;
-    border-radius: 250px;
+    margin: 15px 0px;
+    border-radius: 180px;
     padding: 0px 25px 0px 0px;
+    height: 50%;
+    width: 50%;
 }
-.adopcion p{
-    margin: 10px 30px;
-    font-size: 26px;
+
+/* TEXTO ADOPCION */
+.textob{
+    width: 100%;
+}
+
+.textob h3 {
     text-align: center;
-    padding: 0px 40px 0px 0px;
+    font-size: 500%;
+    padding: 25px 75px 0px 25px;
+}
+
+.textob p {
+    margin: 10px 30px;
+    font-size: 150%;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
 }
