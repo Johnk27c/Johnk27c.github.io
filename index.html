@@ -7,6 +7,21 @@
     <title>Refugio </title>
     <link rel="stylesheet" href="css/styloindex.css">
     <style>
+        button {
+            background-color: #5B5E6B;
+            color: #f8f6f6;
+            border: 2px solid #5B5E6B;
+            border-radius: 10px;
+            font-size: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .Carrusel {
+            max-height: 350px;
+            display: inline-block;
+        }
+
         body {
             background-image: url(images/FondoPatitas.png);
         }
@@ -99,6 +114,13 @@
     </header>
     <main>
         <h1>REFUGIO ARKHAM</h1>
+        <section>
+            <div id="contenedor-carrusel">
+                <div>
+                    <img class="Carrusel" name="Carrusel" src="images/carrusel/carrusel1.jpeg" alt="">
+                </div>
+            </div>
+        </section>
         <div class="centro">
             <div class="cuadro">
                 <div class="texto">
@@ -165,6 +187,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/index-carrusel.js"></script>
 </body>
 
 </html>
