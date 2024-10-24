@@ -6,6 +6,7 @@
     font-family: cursive;
 }
 
+/* IMAGEN DE FONDO */
 body {
     background-repeat: repeat;
     background-size: auto;
@@ -13,6 +14,7 @@ body {
     background-size: 200px 430px;
 }
 
+/* HEDEAR DE PAG */
 header {
     display: flexbox;
     background-color: rgb(1, 97, 123);
@@ -20,12 +22,14 @@ header {
     top: 0px;
 }
 
-nav ul {
+/* CONF MENU DEL HEADER */
+.menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
 
+/* IMAGEN DEL HEADER */
 .menu1 {
     justify-content: left;
     padding: 0px;
@@ -37,6 +41,7 @@ nav ul {
     display: flex;
 }
 
+/* MENU INTERANCTIVO DEL HEADER */
 .menu2 {
     display: flex;
     justify-content: right;
@@ -44,44 +49,29 @@ nav ul {
     font-size: 23px;
 }
 
+.menu2 a:hover {
+    color: rgb(11, 20, 73);
+}
+
 .menu2 li {
-    padding: 0px 15px;
+    padding: 0px 12px;
 }
 
 .menu2 a {
     text-decoration: none;
     color: white;
 }
-h1 {
+
+/* TITULO DE PAG */
+.vet h1 {
     font-size: 70px;
     text-align: center;
     color: black;
 }
 
-h3 {
-    font-size: 40px;
-    text-align: center;
-    color: black;
-}
-h2 {
+.vet h2 {
     font-size: 30px;
     padding: 5px 150px;
-    text-align: center;
-    color: black;
-}
-
-.texto {
-    text-align: center;
-    font-size: 130%;
-    color: rgb(0, 0, 0);
-}
-.texto h3{
-        font-size: 40px;
-        text-align: center;
-        color: black;
-}
-.texto h4 {
-    font-size: 25px;
     text-align: center;
     color: black;
 }
@@ -96,6 +86,7 @@ h2 {
     border-radius: 100px;
     flex-wrap: wrap;
 }
+
 /* ALINEACION CUADROS TRATAMIENTOS */
 .derecha {
     margin-top: 40px;
@@ -115,12 +106,60 @@ h2 {
     margin-left: 2%;
     display: flex;
     justify-content: initial;
-
 }
-/* FORMS CUADRO*/
-fieldset{
+
+/* TEXTO DE TRATAMIENTOS*/
+.texto {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.texto h3 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+.texto h4 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.texto p {
+    font-size: 20px;
+}
+
+/* FORMS FIELDSET*/
+fieldset {
     border-radius: 20px;
 }
+
+/* FORMS CUADRO*/
+.recuadro {
+    border-style: solid;
+    border-color: rgb(1, 97, 123);
+    border-radius: 30px;
+    border-width: 3px;
+    background-color: rgb(255, 185, 81);
+    border-spacing: 12px;
+    display: block;
+    height: 550px;
+    width: 700px;
+    margin: 50px;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 25px 10px rgb(1, 97, 123);
+}
+
+/* FORMS LABEL*/
+label {
+    display: block;
+    height: 30px;
+    width: 400px;
+    font-size: 16px;
+    align-content: center;
+}
+
 /* FORMS INPUTS*/
 .inputs {
     margin: 15px 0px;
@@ -142,6 +181,7 @@ textarea {
     border-radius: 20px;
     resize: none;
 }
+
 /* FORMS BOTON*/
 .submit {
     background-color: rgb(255, 122, 60);
@@ -152,8 +192,79 @@ textarea {
     box-shadow: 0px 0px 25px;
     border-width: 2px 2px 2px 2px;
 }
+
 /* FORMS ERRORES SPAN*/
 span {
     display: none;
     color: red;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: rgb(11, 20, 73);
+    padding: 15px 0px;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* DIV PIE DE PAGINA */
+.contac {
+    width: 30%;
+    padding: 0px 15px;
+    margin: 2px 0;
+}
+
+/* TEXTO PIE DE PAGINA */
+.contac h5 {
+    font-size: 21px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.contac p {
+    font-size: 15px;
+    color: grey;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+    text-align: center;
+}
+
+.contac p:hover {
+    color: white;
+}
+
+/* INSTA FACEBOOK (IMG) DE PAGINA */
+.contac img {
+    display: inline-block;
+    line-height: 40px;
+    height: 55px;
+    width: 55px;
+    transition: all .2s ease;
+}
+
+.img1 {
+    margin: 0px 10px 0px 150px;
+}
+
+.img2 {
+    margin: 0px 70px 0px 10px;
+}
+
+.contac img:hover {
+    background-color: grey;
+    border-radius: 50px;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,210 +7,9 @@
     <title>Adopción</title>
     <link rel="stylesheet" href="css/styloadopción.css">
     <style>
+        /* Imagen de fondo */
         body {
             background-image: url(images/FondoPatitas.png);
-        }
-
-        footer {
-            background-color: rgb(6, 44, 0);
-            padding: 10px 0;
-            margin-top: 60px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .contac {
-            width: 30%;
-            padding: 0px 15px;
-        }
-
-        h5 {
-            font-size: 25px;
-            margin-bottom: 5px;
-            font-weight: bold;
-
-            color: white;
-            padding-bottom: 10px;
-            text-align: center;
-
-        }
-
-        .contac p {
-            font-size: 18px;
-            color: grey;
-            display: block;
-            margin-bottom: 10px;
-            transition: all .3s ease;
-            text-align: center;
-        }
-
-        .contac p:hover {
-            color: white;
-
-        }
-
-        .contac img {
-            display: inline-block;
-            line-height: 40px;
-            height: 65px;
-            width: 65px;
-            transition: all .2s ease;
-        }
-
-        .img1 {
-            margin: 0px 10px 0px 100px;
-
-        }
-
-        .img2 {
-            margin: 0px 70px 0px 10px;
-        }
-
-        .contac img:hover {
-            background-color: grey;
-            border-radius: 50px;
-        }
-
-        h4 {
-            font-size: 70px;
-            text-align: center;
-            border: 1px solid black;
-            margin: 3% 5% 0% 5%;
-            border-radius: 15px;
-            background-color: blanchedalmond;
-        }
-
-        .fila {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0% 5%;
-            flex-wrap: wrap;
-        }
-
-        .columna {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 1px solid black;
-            padding: 15px;
-            border-radius: 15px;
-            background-color: blanchedalmond;
-            margin: 3%;
-        }
-
-        .info img {
-            border-radius: 10px;
-        }
-
-        .info ul li {
-            font-size: 23px;
-        }
-
-        .cuadro {
-            background-color: rgb(171, 187, 175);
-            height: 125%;
-            width: 85%;
-            box-shadow: rgba(0, 0, 0, 0.333) 0px 0px 25px 5px;
-            padding: 10px 50px 10px 30px;
-            border-radius: 200px;
-            border: 1px solid black;
-            flex-wrap: wrap;
-            font-size: 90%;
-        }
-
-        .cuadroh {
-            background-color: rgba(72, 195, 50, 0.942);
-            height: 75%;
-            width: 60%;
-            box-shadow: rgba(0, 0, 0, 0.722) 0px 0px 25px 5px;
-            padding: 10px 30px;
-            border-radius: 200px;
-            border: 1px solid black;
-            flex-wrap: wrap;
-        }
-
-        .cuadrop {
-            background-color: rgb(40, 211, 205);
-            height: 75%;
-            width: 70%;
-            box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 25px 5px;
-            padding: 10px 30px;
-            border-radius: 200px;
-            border: 1px solid black;
-            flex-wrap: wrap;
-            font-size: 90%;
-        }
-
-        .cuadron {
-            background-color: rgb(222, 72, 30);
-            height: 75%;
-            width: 75%;
-            box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 25px 5px;
-            padding: 10px 30px;
-            border-radius: 200px;
-            border: 1px solid black;
-            flex-wrap: wrap;
-            font-size: 90%;
-        }
-
-        .cuadrol {
-            background-color: rgb(212, 141, 33);
-            height: 75%;
-            width: 70%;
-            box-shadow: rgba(0, 0, 0, 0.722) 0px 0px 25px 5px;
-            padding: 10px 30px;
-            border-radius: 100px;
-            border: 1px solid black;
-            flex-wrap: wrap;
-        }
-
-        .cuadrom {
-            background-color: rgb(221, 221, 48);
-            height: 75%;
-            width: 70%;
-            box-shadow: rgba(0, 0, 0, 0.722) 0px 0px 25px 5px;
-            padding: 10px 30px;
-            border-radius: 200px;
-            border: 1px solid black;
-            flex-wrap: wrap;
-            font-size: 90%;
-        }
-
-        .texto p {
-
-            margin: 10px 30px;
-            font-size: 150%;
-            text-align: center;
-            padding: 0px 20px;
-        }
-        .texto ul li {
-            font-size: 18px;
-            margin: 10px 30px;
-            text-align: justify;
-        }
-
-        .centro {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-        }
-
-        h6 {
-            font-size: 50px;
-            text-align: center;
-            margin: 3% 5% 0% 5%;
-            border-radius: 15px;
-            margin-bottom: 5px;
-            margin-top: 5px;
         }
     </style>
 </head>
@@ -218,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="menu">
                 <div class="menu1">
                     <li><img src="images/LogoPerroGato.png" alt="Company Logo" class="logo" /></li>
                 </div>
@@ -233,8 +32,8 @@
     </header>
     <main>
         <div class="centro">
-            <div class="cuadroh">
-                <h6>¡ADOPTAR ES UN GRAN PASO!</h6>
+            <div class="cuadroH">
+                <h1>¡ADOPTAR ES UN GRAN PASO!</h1>
             </div>
         </div>
         <div class="centro">
@@ -250,7 +49,7 @@
             </div>
         </div>
         <div class="centro">
-            <div class="cuadron">
+            <div class="cuadroA">
                 <div class="texto">
                     <p>Ante todo, tenés que tener presente la <b>gran responsabilidad</b> que implica tener a un animal
                         de
@@ -263,7 +62,7 @@
             </div>
         </div>
         <div class="centro">
-            <div class="cuadrop">
+            <div class="cuadroP">
                 <div class="texto">
                     <p>Por eso, si estás decidido a adoptar a tu próximo compañero de vida, te sugerimos seguir estos
                         pasos para llevar a cabo este proceso responsablemente.
@@ -272,102 +71,95 @@
             </div>
         </div>
         <div class="centro">
-            <div class="cuadrol">
+            <div class="cuadropasos">
                 <div class="texto">
                     <p>1-Elegí la mascota ideal para vos de acuerdo con tu estilo de vida y preferencias, tomando en
                         cuenta las siguientes aspectos:
-                        <ul>
+                    <ul>
 
-                            <li>
-                                ¿PERRO O GATO?
-                                <ul>
-                                    <li>Los gatos suelen ser más independientes y mimosos.</li>
-                                    <li>Los perros suelen ser más juguetones y traviesos.</li>
-                                </ul>
-                            </li>
-                
-                
-                            <li>
-                                TAMAÑO: considera el espacio de tu hogar para elegir el tamaño de tu mascota.
-                            </li>
-                            <li>
-                                TIPO DE PELO: Tené en cuenta que hay pelajes que requieren más cuidados que otros.
-                            </li>
-                            <li>
-                                EDAD: una mascota menor a un año necesita atenciones distintas a las de un alumno.
-                            </li>
-                            <li>
-                                PERSONALIDAD: vos y tu nuevo mejor amigo deben tener personalidades compatibles.
-                            </li>
-                            <li>
-                                ESTILO DE VIDA: buscá una mascota que armonice con tu rutina y actividades diarias.
-                            </li>
-                            <li>
-                                TIEMPO: una mascota necesita que le dediques tiempo y dedicación para jugar y cuidarla.
-                            </li>
-                            <li>
-                                PRESUPUESTO: calculá los gastos de alimento, vacunas y productos de higiene antes de
-                                adoptar.
-                            </li>
-                        </ul>
+                        <li>
+                            ¿PERRO O GATO?
+                            <ul>
+                                <li>Los gatos suelen ser más independientes y mimosos.</li>
+                                <li>Los perros suelen ser más juguetones y traviesos.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            TAMAÑO: considera el espacio de tu hogar para elegir el tamaño de tu mascota.
+                        </li>
+                        <li>
+                            TIPO DE PELO: Tené en cuenta que hay pelajes que requieren más cuidados que otros.
+                        </li>
+                        <li>
+                            EDAD: una mascota menor a un año necesita atenciones distintas a las de un alumno.
+                        </li>
+                        <li>
+                            PERSONALIDAD: vos y tu nuevo mejor amigo deben tener personalidades compatibles.
+                        </li>
+                        <li>
+                            ESTILO DE VIDA: buscá una mascota que armonice con tu rutina y actividades diarias.
+                        </li>
+                        <li>
+                            TIEMPO: una mascota necesita que le dediques tiempo y dedicación para jugar y cuidarla.
+                        </li>
+                        <li>
+                            PRESUPUESTO: calculá los gastos de alimento, vacunas y productos de higiene antes de
+                            adoptar.
+                        </li>
+                    </ul>
                     </p>
                 </div>
             </div>
         </div>
-
-
-        
         <div class="centro">
-            <div class="cuadrol">
+            <div class="cuadropasos">
                 <div class="texto">
-        <p>2-Prepará tu casa para tu nueva mascota con:</p>
-        <ul>
-            <li>
-                Comida y agua.
-            </li>
-            <li>
-                Espacio para dormir y jugar.
-            </li>
-            <li>
-                Utensilios para higiene.
-            </li>
-            <li>
-                Retirá objetos y sustancias peligrosas de su alcance.
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
-
-        <div class="centro">
-            <div class="cuadrol">
-                <div class="texto">
-        <p>3-¡Trae a tu amigo/a a casa!</p>
-        <ul>
-            <li>
-                Hacelo sentir seguro al llegar a tu hogar. Dejá que explore y se acerque a vos cuando sienta
-                confianza.
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
-
-        <div class="centro">
-            <div class="cuadrol">
-                <div class="texto">
-        <p>4-Llevalo al veterinario</p>
-        <ul>
-            <li>
-                Es importante que lo revise un especialista para llevar un control de sus vacunas y/o
-                esterilizarlo.
-            </li>
-        </ul>
-        </div>
-        </div>
+                    <p>2-Prepará tu casa para tu nueva mascota con:</p>
+                    <ul>
+                        <li>
+                            Comida y agua.
+                        </li>
+                        <li>
+                            Espacio para dormir y jugar.
+                        </li>
+                        <li>
+                            Utensilios para higiene.
+                        </li>
+                        <li>
+                            Retirá objetos y sustancias peligrosas de su alcance.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="centro">
-            <div class="cuadrom">
+            <div class="cuadropasos">
+                <div class="texto">
+                    <p>3-¡Trae a tu amigo/a a casa!</p>
+                    <ul>
+                        <li>
+                            Hacelo sentir seguro al llegar a tu hogar. Dejá que explore y se acerque a vos cuando sienta
+                            confianza.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="centro">
+            <div class="cuadropasos">
+                <div class="texto">
+                    <p>4-Llevalo al veterinario</p>
+                    <ul>
+                        <li>
+                            Es importante que lo revise un especialista para llevar un control de sus vacunas y/o
+                            esterilizarlo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="centro">
+            <div class="cuadroF">
                 <div class="texto">
                     <p>Elegir adoptar una mascota no se trata solo de darle la bienvenida a un animal en tu hogar. Se
                         trata de
@@ -381,11 +173,8 @@
                 </div>
             </div>
         </div>
-
-
-
         <section>
-            <h4>¡Veni, conocenos y adopta a uno!</h4>
+            <h3>¡Veni, conocenos y adopta a uno!</h3>
             <div class="fila">
                 <div class="columna">
                     <div class="info">
@@ -439,7 +228,7 @@
             <div class="fila">
                 <div class="columna">
                     <div class="info">
-                        <img src="images/adopcion/Gato1.jpg" alt="">
+                        <img src="images/adopcion/Perro3.jpg" alt="">
                         <ul>
                             <li>
                                 Nombre:
@@ -455,7 +244,7 @@
                 </div>
                 <div class="columna">
                     <div class="info">
-                        <img src="images/adopcion/Perro2.jpg" alt="">
+                        <img src="images/adopcion/Perro4.jpg" alt="">
                         <ul>
                             <li>
                                 Nombre:
@@ -471,57 +260,7 @@
                 </div>
                 <div class="columna">
                     <div class="info">
-                        <img src="images/adopcion/Gato3.jpg" alt="">
-                        <ul>
-                            <li>
-                                Nombre:
-                            </li>
-                            <li>
-                                Sexo:
-                            </li>
-                            <li>
-                                Edad:
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="columna">
-                    <div class="info">
-                        <img src="images/adopcion/Gato1.jpg" alt="">
-                        <ul>
-                            <li>
-                                Nombre:
-                            </li>
-                            <li>
-                                Sexo:
-                            </li>
-                            <li>
-                                Edad:
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="columna">
-                    <div class="info">
-                        <img src="images/adopcion/Perro2.jpg" alt="">
-                        <ul>
-                            <li>
-                                Nombre:
-                            </li>
-                            <li>
-                                Sexo:
-                            </li>
-                            <li>
-                                Edad:
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="columna">
-                    <div class="info">
-                        <img src="images/adopcion/Gato3.jpg" alt="">
+                        <img src="images/adopcion/Gato7.jpg" alt="">
                         <ul>
                             <li>
                                 Nombre:
@@ -539,7 +278,7 @@
             <div class="fila">
                 <div class="columna">
                     <div class="info">
-                        <img src="images/adopcion/Gato1.jpg" alt="">
+                        <img src="images/adopcion/Gato2.jpg" alt="">
                         <ul>
                             <li>
                                 Nombre:
@@ -555,7 +294,7 @@
                 </div>
                 <div class="columna">
                     <div class="info">
-                        <img src="images/adopcion/Perro2.jpg" alt="">
+                        <img src="images/adopcion/Gato4.jpg" alt="">
                         <ul>
                             <li>
                                 Nombre:
@@ -571,7 +310,57 @@
                 </div>
                 <div class="columna">
                     <div class="info">
-                        <img src="images/adopcion/Gato3.jpg" alt="">
+                        <img src="images/adopcion/Gato5.jpg" alt="">
+                        <ul>
+                            <li>
+                                Nombre:
+                            </li>
+                            <li>
+                                Sexo:
+                            </li>
+                            <li>
+                                Edad:
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna">
+                    <div class="info">
+                        <img src="images/adopcion/Perro1.jpg" alt="">
+                        <ul>
+                            <li>
+                                Nombre:
+                            </li>
+                            <li>
+                                Sexo:
+                            </li>
+                            <li>
+                                Edad:
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="info">
+                        <img src="images/adopcion/Gato6.jpeg" alt="">
+                        <ul>
+                            <li>
+                                Nombre:
+                            </li>
+                            <li>
+                                Sexo:
+                            </li>
+                            <li>
+                                Edad:
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="info">
+                        <img src="images/adopcion/Perro5.jpg" alt="">
                         <ul>
                             <li>
                                 Nombre:

@@ -5,51 +5,266 @@
     margin-bottom: 0px;
     font-family: cursive;
 }
+
+/* IMAGEN DE FONDO */
 body {
     background-repeat: repeat;
     background-size: auto;
     background-attachment: inherit;
     background-size: 200px 430px;
 }
+
+/* HEDEAR DE PAG */
 header {
     display: flexbox;
     background-color: rgb(1, 97, 123);
     position: sticky;
     top: 0px;
 }
-nav ul {
+
+/* CONF MENU DEL HEADER */
+.menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
+
+/* IMAGEN DEL HEADER */
 .menu1 {
     justify-content: left;
     padding: 0px;
 }
-.menu1 img{
+
+.menu1 img {
     height: 55px;
     width: 55px;
     display: flex;
 }
+
+/* MENU INTERANCTIVO DEL HEADER */
 .menu2 {
     display: flex;
     justify-content: right;
     align-items: center;
     font-size: 23px;
 }
-.menu2 li {
-    padding: 0px 15px;
+.menu2 a:hover {
+    color: rgb(11, 20, 73);
 }
+
+.menu2 li {
+    padding: 0px 12px;
+}
+
 .menu2 a {
     text-decoration: none;
     color: white;
 }
+
+/* H1 */
 h1 {
-    font-size: 140px;
+    font-size: 50px;
     text-align: center;
 }
-h3 {
-    font-size: 80px;
+
+/* CENTRAR CUADROS */
+.centro {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CUADRO TITULO */
+.cuadroH {
+    background-color: rgba(72, 195, 50, 0.942);
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.722) 0px 0px 25px 5px;
+    border-radius: 200px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+/* CUADRO SIGUIENTES AL TITULO */
+.cuadro {
+    background-color: rgb(171, 187, 175);
+    height: 125%;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.333) 0px 0px 25px 5px;
+    padding: 10px 50px 10px 30px;
+    border-radius: 200px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    font-size: 90%;
+}
+
+/* CUADRO ADEVERTENCIA */
+.cuadroA {
+    background-color: rgb(222, 72, 30);
+    height: 75%;
+    width: 75%;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 25px 5px;
+    padding: 10px 30px;
+    border-radius: 200px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    font-size: 90%;
+}
+
+/* CUADRO PASOS */
+.cuadroP {
+    background-color: rgb(40, 211, 205);
+    height: 75%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 25px 5px;
+    padding: 10px 30px;
+    border-radius: 200px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    font-size: 90%;
+}
+
+/* CUADRO PASOS RECOMENDADOS */
+.cuadropasos {
+    background-color: rgb(212, 141, 33);
+    height: 75%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.722) 0px 0px 25px 5px;
+    padding: 10px 30px;
+    border-radius: 100px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.texto p {
+    margin: 10px 30px;
+    font-size: 150%;
     text-align: center;
-    color: black;
+    padding: 0px 20px;
+}
+
+.texto ul li {
+    font-size: 18px;
+    margin: 10px 30px;
+    text-align: justify;
+}
+
+/* CUADRO FINAL */
+.cuadroF {
+    background-color: rgb(221, 221, 48);
+    height: 75%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.722) 0px 0px 25px 5px;
+    padding: 10px 30px;
+    border-radius: 200px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    font-size: 90%;
+}
+
+/* H3 */
+h3 {
+    font-size: 70px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 3% 5% 0% 5%;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+}
+
+/* MASCOTA ADOPCION */
+.fila {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0% 5%;
+    flex-wrap: wrap;
+}
+
+.columna {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    margin: 3%;
+}
+
+.info img {
+    border-radius: 10px;
+}
+
+.info ul li {
+    font-size: 23px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: rgb(11, 20, 73);
+    padding: 15px 0px;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* DIV PIE DE PAGINA */
+.contac {
+    width: 30%;
+    padding: 0px 15px;
+    margin: 2px 0;
+}
+
+/* TEXTO PIE DE PAGINA */
+.contac h5 {
+    font-size: 21px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.contac p {
+    font-size: 15px;
+    color: grey;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+    text-align: center;
+}
+
+.contac p:hover {
+    color: white;
+}
+
+/* INSTA FACEBOOK (IMG) DE PAGINA */
+.contac img {
+    display: inline-block;
+    line-height: 40px;
+    height: 55px;
+    width: 55px;
+    transition: all .2s ease;
+}
+
+.img1 {
+    margin: 0px 10px 0px 150px;
+}
+
+.img2 {
+    margin: 0px 70px 0px 10px;
+}
+
+.contac img:hover {
+    background-color: grey;
+    border-radius: 50px;
 }
