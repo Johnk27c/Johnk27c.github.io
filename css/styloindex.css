@@ -48,6 +48,9 @@ header {
     align-items: center;
     font-size: 23px;
 }
+.menu2 a:hover {
+    color: rgb(11, 20, 73);
+}
 
 .menu2 li {
     padding: 0px 12px;
@@ -62,13 +65,41 @@ header {
 h1 {
     font-size: 140px;
     text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 1.0);    
 }
 
 /* CARRUSEL */
-.Carrusel {
-    max-height: 350px;
-    display: inline-block;
+#contenedor-carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+#anterior{
+    margin: 0px 50px;
+}
+#siguiente{
+    margin: 0px 50px;
+}
+
+.Carrusel {
+    display: inline-block;    
+    border: 9px solid rgb(1, 97, 123);   
+    height: 400px;
+    width: 700px;
+    border-radius: 40px;
+     
+}
+button {
+    background-color: black;
+    color: #f8f6f6;
+    border: 3px solid rgb(1, 97, 123);
+    border-radius: 150%;
+    font-size: 30px;
+    padding: 10px;
+}
+
 
 /* DIV PARA CENTRAR CUADROS */
 .centro {
@@ -79,34 +110,37 @@ h1 {
 
 /* CUADRO QUIENES SOMOS */
 .cuadroQ {
-    background-color: rgb(16, 163, 204);
+    background-color: rgb(85, 149, 167);
     width: 95%;
-    box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
+    box-shadow: rgba(0, 0, 0, 0.621) 0px 0px 25px 5px;
     border-radius: 150px;
     flex-wrap: wrap;
+    margin: 30px 0px;
 }
 
 /* TEXTO QUIENES SOMOS */
 .textoQ h2 {
     text-align: center;
     font-size: 77px;
-    padding: 35px 75px 0px 25px;
+    padding: 5px 75px 5px 25px;
 }
 
 .textoQ p {
     margin: 10px 30px;
     font-size: 24px;
     text-align: center;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 30px 5px 30px;
 }
+
 
 /* CUADRO VETERINARIA */
 .cuadroV {
-    background-color: rgb(250, 166, 39);
+    background-color: rgb(50, 163, 228);
     width: 95%;
-    box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
+    box-shadow: rgba(0, 0, 0, 0.621) 0px 0px 25px 5px;
     border-radius: 150px;
     flex-wrap: wrap;
+    margin: 25px 0px;
 }
 
 /* IMAGEN VETERINARIA */
@@ -130,16 +164,20 @@ h1 {
     text-align: center;
     padding: 0px 30px 0px 30px;
 }
+.textoV p a {    
+    color: blue;    
+}
 
 /* CUADRO ADOPCION */
 .cuadroA {
-    background-color: goldenrod;
+    background-color: rgb(50, 163, 228);
     height: 125%;
     width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
+    box-shadow: rgba(0, 0, 0, 0.621) 0px 0px 25px 5px;
     padding: 10px 50px 10px 30px;
     border-radius: 200px;
     flex-wrap: wrap;
+    margin: 25px 0px;
 }
 
 /* IMAGEN ADOPCION */
@@ -165,10 +203,13 @@ h1 {
     text-align: center;
     padding: 0px 20px 0px 20px;
 }
+.textoA p a {    
+    color: blue;    
+}
 
 /* PIE DE PAGINA */
 footer {
-    background-color: rgb(6, 44, 0);
+    background-color: rgb(11, 20, 73);
     padding: 15px 0px;
     margin-top: 50px;
 }

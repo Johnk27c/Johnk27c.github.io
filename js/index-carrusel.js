@@ -1,15 +1,16 @@
 let imagenes = ["images/carrusel/carrusel1.jpeg", "images/carrusel/carrusel2.png", "images/carrusel/carrusel3.jpg", "images/carrusel/carrusel4.jpeg", "images/carrusel/carrusel5.jpg", "images/carrusel/carrusel6.jpg"];
 let botonAnterior = document.createElement("button");
-botonAnterior.innerHTML = "Anterior"
+botonAnterior.innerHTML = " << "
 let botonSiguiente = document.createElement("button");
-botonSiguiente.innerHTML = "Siguiente"
-let contenedorcarrusel = document.getElementById("contenedor-carrusel");
+botonSiguiente.innerHTML = " >> "
+let anterior = document.getElementById("anterior");
+let siguiente = document.getElementById("siguiente");
 let contador = 0;
 
 document.Carrusel.src = imagenes[contador]
 
-contenedorcarrusel.append(botonAnterior);
-contenedorcarrusel.append(botonSiguiente);
+anterior.append(botonAnterior);
+siguiente.append(botonSiguiente);
 
 botonAnterior.onclick = e => {
     contador--;
