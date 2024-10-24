@@ -248,30 +248,32 @@
                         <legend>Formulario para consulta</legend>
                         <div class="inputs">
                             <label for="nombre">Nombre</label>
-                            <input class="input" type="text" id="nombre" name="nombreing">
+                            <input class="input" type="text" id="nombre" name="nombre" onfocus="limpiarcampos(event)">
+                            <span id="spanErrorNombre">*Debe ingresar un nombre entre 0 y 25 caracteres.</span>
                         </div>
                         <div class="inputs">
                             <label for="descripcion">Descripción del problema que tiene su mascota</label>
-                            <textarea name="descripcioning" id="descripcion" cols="75" rows="7"></textarea>
-                            <span id="spanErrorPelicula">*Nombre de película ingresado no válido.</span>
+                            <textarea name="descripcion" id="descripcion" cols="80" rows="5" onfocus="limpiarcampos(event)"></textarea>
+                            <span id="spanErrorDescripcion">*Debe ingresar un mensaje de no más de 400 caracteres.</span>
                         </div>
                         <div class="inputs">
                             <label for="telefono">Telefono</label>
-                            <input class="input" type="text" id="telefono" name="telefonoing">
-                            <span id="spanErrorPuntuacion">*Puntuación no válida.</span>
+                            <input class="input" type="number" id="telefono" name="telefono" onfocus="limpiarcampos(event)">
+                            <span id="spanErrorTelefono">*Telefono no valido, debe ingresar solo numeros (ejemplo: 2664999999).</span>
                         </div>
                         <div class="inputs">
                             <label for="email">Email</label>
-                            <input class="input" type="email" id="mail">
+                            <input class="input" type="email" id="email" onfocus="limpiarcampos(event)">
                             <span id="spanErrorEmail">*Email no válido.</span>
                         </div>
                     </fieldset>
                     <div class="centro">
-                        <input class="submit" type="submit" value="Guardar Reseña" onclick="validarcampos()">
+                        <input class="submit" type="submit" value="Enviar consulta" onclick="validarcampos()">
                     </div>
                 </div>
             </div>
         </form>
+        <div id="feedback"></div>
     </main>
     <footer>
         <div class="container">
@@ -292,6 +294,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/adopcion-forms.js"></script>
 </body>
 
 </html>

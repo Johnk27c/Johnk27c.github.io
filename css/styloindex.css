@@ -6,6 +6,7 @@
     font-family: cursive;
 }
 
+/* IMAGEN DE FONDO */
 body {
     background-repeat: repeat;
     background-size: auto;
@@ -13,6 +14,7 @@ body {
     background-size: 200px 430px;
 }
 
+/* HEDEAR DE PAG */
 header {
     display: flexbox;
     background-color: rgb(1, 97, 123);
@@ -20,12 +22,14 @@ header {
     top: 0px;
 }
 
-nav ul {
+/* CONF MENU DEL HEADER */
+.menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
 
+/* IMAGEN DEL HEADER */
 .menu1 {
     justify-content: left;
     padding: 0px;
@@ -37,6 +41,7 @@ nav ul {
     display: flex;
 }
 
+/* MENU INTERANCTIVO DEL HEADER */
 .menu2 {
     display: flex;
     justify-content: right;
@@ -45,7 +50,7 @@ nav ul {
 }
 
 .menu2 li {
-    padding: 0px 15px;
+    padding: 0px 12px;
 }
 
 .menu2 a {
@@ -53,39 +58,50 @@ nav ul {
     color: white;
 }
 
+/* H1 */
 h1 {
     font-size: 140px;
     text-align: center;
 }
 
-/* h3 {
-    font-size: 80px;
-    text-align: center;
-    color: black;
-} */
-
-.quienesomo {
-    background-color: rgb(16, 163, 204);
-    display: flexbox;
-    align-items: initial;
-    margin: 75px 40px;
-    padding: 5px 80px 30px 80px;
-    text-align: center;
-    border-radius: 150px;
-    font-size: 25px;
-    color: rgb(20, 0, 148);
-    font-weight: bold;
-    box-shadow: black 0px 0px 25px 15px;
+/* CARRUSEL */
+.Carrusel {
+    max-height: 350px;
+    display: inline-block;
 }
 
+/* DIV PARA CENTRAR CUADROS */
 .centro {
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
+/* CUADRO QUIENES SOMOS */
+.cuadroQ {
+    background-color: rgb(16, 163, 204);
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
+    border-radius: 150px;
+    flex-wrap: wrap;
+}
+
+/* TEXTO QUIENES SOMOS */
+.textoQ h2 {
+    text-align: center;
+    font-size: 77px;
+    padding: 35px 75px 0px 25px;
+}
+
+.textoQ p {
+    margin: 10px 30px;
+    font-size: 24px;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+}
+
 /* CUADRO VETERINARIA */
-.cuadroa {
+.cuadroV {
     background-color: rgb(250, 166, 39);
     width: 95%;
     box-shadow: rgba(0, 0, 0, 0.307) 0px 0px 25px 15px;
@@ -102,21 +118,21 @@ h1 {
 }
 
 /* TEXTO VETERINARIA */
-.textoa h3 {
+.textoV h2 {
     text-align: center;
-    font-size: 500%;
+    font-size: 77px;
     padding: 35px 75px 0px 25px;
 }
 
-.textoa p {
+.textoV p {
     margin: 10px 30px;
-    font-size: 150%;
+    font-size: 24px;
     text-align: center;
     padding: 0px 30px 0px 30px;
 }
 
 /* CUADRO ADOPCION */
-.cuadrob {
+.cuadroA {
     background-color: goldenrod;
     height: 125%;
     width: 90%;
@@ -137,19 +153,85 @@ h1 {
 }
 
 /* TEXTO ADOPCION */
-.textob{
-    width: 100%;
-}
-
-.textob h3 {
+.textoA h2 {
     text-align: center;
-    font-size: 500%;
+    font-size: 77px;
     padding: 25px 75px 0px 25px;
 }
 
-.textob p {
+.textoA p {
     margin: 10px 30px;
-    font-size: 150%;
+    font-size: 24px;
     text-align: center;
     padding: 0px 20px 0px 20px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: rgb(6, 44, 0);
+    padding: 15px 0px;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* DIV PIE DE PAGINA */
+.contac {
+    width: 30%;
+    padding: 0px 15px;
+    margin: 2px 0;
+}
+
+/* TEXTO PIE DE PAGINA */
+.contac h5 {
+    font-size: 21px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.contac p {
+    font-size: 15px;
+    color: grey;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+    text-align: center;
+}
+
+.contac p:hover {
+    color: white;
+}
+
+/* INSTA FACEBOOK (IMG) DE PAGINA */
+.contac img {
+    display: inline-block;
+    line-height: 40px;
+    height: 55px;
+    width: 55px;
+    transition: all .2s ease;
+}
+
+.img1 {
+    margin: 0px 10px 0px 150px;
+}
+
+.img2 {
+    margin: 0px 70px 0px 10px;
+}
+
+.contac img:hover {
+    background-color: grey;
+    border-radius: 50px;
 }

@@ -7,6 +7,11 @@
     <title>Refugio </title>
     <link rel="stylesheet" href="css/styloindex.css">
     <style>
+        /* Imagen de fondo */
+        body {
+            background-image: url(images/FondoPatitas.png);
+        }
+
         button {
             background-color: #5B5E6B;
             color: #f8f6f6;
@@ -16,90 +21,13 @@
             padding-left: 5px;
             padding-right: 5px;
         }
-
-        .Carrusel {
-            max-height: 350px;
-            display: inline-block;
-        }
-
-        body {
-            background-image: url(images/FondoPatitas.png);
-        }
-
-        footer {
-            background-color: rgb(6, 44, 0);
-            padding: 10px 0;
-            margin-top: 60px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .contac {
-            width: 30%;
-            padding: 0px 15px;
-        }
-
-        h5 {
-            font-size: 25px;
-            margin-bottom: 5px;
-            font-weight: bold;
-
-            color: white;
-            padding-bottom: 10px;
-            text-align: center;
-
-        }
-
-        .contac p {
-            font-size: 18px;
-            color: grey;
-            display: block;
-            margin-bottom: 10px;
-            transition: all .3s ease;
-            text-align: center;
-        }
-
-        .contac p:hover {
-            color: white;
-
-        }
-
-        .contac img {
-            display: inline-block;
-            line-height: 40px;
-            height: 65px;
-            width: 65px;
-            transition: all .2s ease;
-        }
-
-        .img1 {
-            margin: 0px 10px 0px 100px;
-
-        }
-
-        .img2 {
-            margin: 0px 70px 0px 10px;
-        }
-
-        .contac img:hover {
-            background-color: grey;
-            border-radius: 50px;
-        }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="menu">
                 <div class="menu1">
                     <li><img src="images/LogoPerroGato.png" alt="Company Logo" class="logo" /></li>
                 </div>
@@ -122,9 +50,9 @@
             </div>
         </section>
         <div class="centro">
-            <div class="cuadro">
-                <div class="texto">
-                    <h3>¿Quiénes somos?</h3>
+            <div class="cuadroQ">
+                <div class="textoQ">
+                    <h2>¿Quiénes somos?</h2>
                     <p>Somos un refugio destinado a preservar la vida de los perros y gatos en situación de calle
                         dándoles
                         tránsito y
@@ -134,10 +62,10 @@
             </div>
         </div>
         <div class="centro">
-            <div class="cuadroa">
-                <div class="textoa">
+            <div class="cuadroV">
+                <div class="textoV">
                     <img class="veterinaria" src="images/veterinaria.png" alt="">
-                    <h3>VETERINARIA</h3>
+                    <h2>VETERINARIA</h2>
                     <p>Contamos con excelente personal capacitado y las herramientas necesarias para la asistencia de
                         las
                         mascotas que ingresan al refugio,
@@ -152,10 +80,10 @@
             </div>
         </div>
         <div class="centro">
-            <div class="cuadrob">
-                <div class="textob">
+            <div class="cuadroA">
+                <div class="textoA">
                     <img class="adopcion" src="images/adopción.jpg" alt="">
-                    <h3>ADOPCIÓN</h3>
+                    <h2>ADOPCIÓN</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio sequi, necessitatibus
                         incidunt
